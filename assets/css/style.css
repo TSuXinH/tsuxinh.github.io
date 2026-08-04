@@ -1,15 +1,15 @@
 :root {
-  --theme: #ffffff;
-  --entry: #ffffff;
-  --primary: #202124;
-  --secondary: #6b6f76;
-  --tertiary: #f4f5f6;
-  --content: #30343a;
-  --border: #e4e6e8;
+  --theme: #eee8d8;
+  --entry: #f8f4e8;
+  --primary: #29271f;
+  --secondary: #6f695b;
+  --tertiary: #e5dcc5;
+  --content: #3d392f;
+  --border: #d8cdb3;
   --accent: #2f6f69;
-  --accent-soft: #eaf3f1;
-  --code-bg: #f5f6f7;
-  --shadow: 0 1px 2px rgba(0, 0, 0, 0.035), 0 8px 28px rgba(0, 0, 0, 0.035);
+  --accent-soft: #dfe8df;
+  --code-bg: #e8e0cc;
+  --shadow: 0 1px 2px rgba(73, 58, 25, 0.045), 0 8px 28px rgba(73, 58, 25, 0.055);
   --radius: 10px;
   --main-width: 760px;
   --wide-width: 1040px;
