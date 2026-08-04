@@ -5,9 +5,8 @@ A lightweight academic website inspired by the information architecture of [Lil'
 ## What is included
 
 - responsive homepage with research-note cards;
-- Publications, Archive, Search, Tags, Gallery, About, and printable CV pages;
+- Publications, Gallery, About, and printable CV pages;
 - light/dark mode with saved user preference;
-- local browser search with no server;
 - RSS, sitemap, robots.txt, custom 404 page, and basic SEO metadata;
 - original SVG placeholders for research figures and gallery images;
 - no Node, Ruby, Hugo, Jekyll, database, or build step.
@@ -76,7 +75,7 @@ Do not open `index.html` directly with `file://`, because the site uses root-rel
    The site currently uses the public status “arXiv preprint.” Update the venue only after you decide that it should be public.
 
 5. **CV**  
-   `/cv/` is an HTML CV with a **Print / Save as PDF** button. You may alternatively place a PDF in `assets/Xinhong_Xu_CV.pdf` and change the CV links.
+   Replace `assets/files/CV.pdf` with the latest version of your CV.
 
 6. **Personal text**  
    The site avoids inventing hobbies. Add genuine interests to the About page when ready.
@@ -86,11 +85,10 @@ Do not open `index.html` directly with `file://`, because the site uses root-rel
 - Homepage: `index.html`
 - Publications: `publications/index.html`
 - About: `about/index.html`
-- CV: `cv/index.html`
+- CV: `assets/files/CV.pdf`
 - Gallery: `gallery/index.html`
 - Theme and layout: `assets/css/style.css`
-- Search data: `assets/js/search-index.js`
 
 ## Design attribution
 
-The site borrows broad layout ideas—compact navigation, introductory block, article cards, archive, tags, search, and theme switching—from Lilian Weng's public website and PaperMod. It does not copy her content, branding, generated code, or visual assets.
+The site borrows broad layout ideas—compact navigation, introductory block, article cards, and theme switching—from Lilian Weng's public website and PaperMod. It does not copy her content, branding, generated code, or visual assets.
