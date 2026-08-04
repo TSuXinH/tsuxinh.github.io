@@ -12,12 +12,11 @@
 ## Before sharing publicly
 
 - [ ] Replace profile artwork or confirm it is acceptable.
-- [ ] Replace gallery placeholders with real images.
 - [ ] Verify all publication and code links.
 - [ ] Update CAPT status.
 - [ ] Review public contact information.
 - [ ] Check mobile layout and dark mode.
-- [ ] Use the CV page's Print function to verify PDF output.
+- [ ] Verify that the CV PDF link opens correctly.
 
 ## Updating the site later
 

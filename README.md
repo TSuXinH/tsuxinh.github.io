@@ -5,10 +5,10 @@ A lightweight academic website inspired by the information architecture of [Lil'
 ## What is included
 
 - responsive homepage with research-note cards;
-- Publications, Gallery, About, and printable CV pages;
+- Publications and About pages;
 - light/dark mode with saved user preference;
 - RSS, sitemap, robots.txt, custom 404 page, and basic SEO metadata;
-- original SVG placeholders for research figures and gallery images;
+- original SVG artwork for the site identity and research figures;
 - no Node, Ruby, Hugo, Jekyll, database, or build step.
 
 ## Deploy to GitHub Pages
@@ -65,19 +65,16 @@ Do not open `index.html` directly with `file://`, because the site uses root-rel
 1. **Portrait / identity artwork**  
    Replace `assets/img/profile-art.svg` with a photograph or preferred artwork. Keep the same filename, or update the path in `about/index.html`.
 
-2. **Gallery placeholders**  
-   Replace files beginning with `assets/img/gallery-`. The current SVGs are placeholders, not claims about personal travel or conference history.
-
-3. **Publication links**  
+2. **Publication links**
    Check the CalM repository link in `publications/index.html`. It currently assumes `https://github.com/TSuXinH/CalM`.
 
-4. **CAPT status**  
+3. **CAPT status**
    The site currently uses the public status “arXiv preprint.” Update the venue only after you decide that it should be public.
 
-5. **CV**  
+4. **CV**
    Replace `assets/files/CV.pdf` with the latest version of your CV.
 
-6. **Personal text**  
+5. **Personal text**
    The site avoids inventing hobbies. Add genuine interests to the About page when ready.
 
 ## Editing notes
@@ -86,7 +83,6 @@ Do not open `index.html` directly with `file://`, because the site uses root-rel
 - Publications: `publications/index.html`
 - About: `about/index.html`
 - CV: `assets/files/CV.pdf`
-- Gallery: `gallery/index.html`
 - Theme and layout: `assets/css/style.css`
 
 ## Design attribution
