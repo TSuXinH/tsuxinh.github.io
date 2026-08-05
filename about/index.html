@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Visitor map and visit count for the personal website of Xinhong Xu.">
+  <meta name="author" content="Xinhong Xu">
+  <meta name="theme-color" content="#a86f00">
+  <title>About — Xinhong Xu</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/style.css?v=9">
+  <meta property="og:title" content="About — Xinhong Xu">
+  <meta property="og:description" content="Visitor map and visit count for the personal website of Xinhong Xu.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tsuxinh.github.io/about/">
+</head>
+<body id="top">
+
+<header class="header">
+  <nav class="nav" aria-label="Main navigation">
+    <div class="logo"><a href="/"><span class="logo-mark">X</span>inhong Xu</a></div>
+    <button class="menu-button" aria-expanded="false" aria-controls="menu" aria-label="Toggle navigation">☰</button>
+    <ul id="menu"><li><a href="/" class="">Posts</a></li><li><a href="/publications/" class="">Publications</a></li><li><a href="/about/" class="active">About</a></li></ul>
+    <span class="logo-switches">
+      <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg id="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
+    </span>
+  </nav>
+</header>
+
+<main class="main wide">
+  <header class="page-header"><h1>About</h1><p>Visitor activity for this website.</p></header>
+  <section class="visitor-dashboard" aria-label="Visitor statistics">
+    <div class="visitor-map-panel">
+      <div class="visitor-panel-header"><div><span class="kicker">Global reach</span><h2>Visitor Map</h2></div></div>
+      <div class="visitor-map" aria-label="Approximate locations of visitors">
+        <script id="_wauvst">var _wau = window._wau || []; _wau.push(["map", "yt9mf2f1jh", "vst", "600", "300", "night", "star-orange"]);</script>
+        <script async src="https://waust.at/m.js"></script>
+      </div>
+    </div>
+    <aside class="visitor-count-panel">
+      <span class="kicker">Total visits</span>
+      <strong id="visitor-count" class="visitor-count" aria-live="polite">—</strong>
+      <span class="visitor-count-label">page views</span>
+    </aside>
+  </section>
+  <p class="visitor-note">Statistics begin with the launch of this page. Locations are approximate. Map and count data are provided by whos.amung.us and CounterAPI.</p>
+</main>
+
+<footer class="footer"><span>&copy; 2026 Xinhong Xu</span><span>Built as a lightweight GitHub Pages site</span></footer>
+<a href="#top" class="top-link" id="top-link" aria-label="Go to top"><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg></a>
+<script>
+  function renderVisitorCount(response) {
+    const count = document.getElementById('visitor-count');
+    if (count && Number.isFinite(Number(response.value))) count.textContent = Number(response.value).toLocaleString();
+  }
+</script>
+<script async src="https://counterapi.com/api/tsuxinh.github.io/view/about-visits?callback=renderVisitorCount"></script>
+<script src="/assets/js/site.js"></script>
+
+</body>
+</html>

@@ -16,6 +16,7 @@
 - [ ] Review public contact information.
 - [ ] Check mobile layout and dark mode.
 - [ ] Verify that the CV PDF link opens correctly.
+- [ ] Verify that the About visitor map and visit counter load correctly.
 
 ## Updating the site later
 

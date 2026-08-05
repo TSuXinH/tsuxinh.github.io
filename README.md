@@ -5,7 +5,7 @@ A lightweight academic website inspired by the information architecture of [Lil'
 ## What is included
 
 - responsive homepage with an academic introduction and professional links;
-- a dedicated Publications page;
+- dedicated Publications and visitor-statistics About pages;
 - light/dark mode with saved user preference;
 - RSS, sitemap, robots.txt, custom 404 page, and basic SEO metadata;
 - original SVG artwork for the site identity and research figures;
@@ -75,6 +75,7 @@ Do not open `index.html` directly with `file://`, because the site uses root-rel
 
 - Homepage: `index.html`
 - Publications: `publications/index.html`
+- Visitor statistics: `about/index.html`
 - CV: `assets/files/CV.pdf`
 - Theme and layout: `assets/css/style.css`
 
