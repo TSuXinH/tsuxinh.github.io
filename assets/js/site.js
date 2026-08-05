@@ -29,4 +29,13 @@
     update();
   }
 
+  if (!document.querySelector('[data-hit-counter]')) {
+    const hitCounter = new Image();
+    hitCounter.src = 'https://hits.sh/tsuxinh.github.io.svg';
+    hitCounter.alt = '';
+    hitCounter.hidden = true;
+    hitCounter.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(hitCounter);
+  }
+
 })();

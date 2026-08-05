@@ -131,10 +131,12 @@ body:not(.dark) #sun { display: none; }
 .pub-info .venue { color: var(--accent); font-weight: 650; }
 .pub-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 14px; }
 
-.visitor-globe { max-width: 680px; margin: 0 auto; padding: 26px; text-align: center; background: var(--entry); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
+.visitor-globe { max-width: 520px; margin: 0 auto; padding: 26px; text-align: center; background: var(--entry); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
 .visitor-globe-header h2 { margin: 2px 0 18px; font-size: 28px; letter-spacing: -0.025em; }
-.visitor-globe-embed { min-height: 340px; display: grid; place-items: center; overflow: hidden; }
+.visitor-globe-embed { width: 260px; min-height: 260px; display: grid; place-items: center; margin: 0 auto; overflow: hidden; }
 .visitor-globe-embed canvas, .visitor-globe-embed iframe, .visitor-globe-embed img { max-width: 100%; }
+.visitor-total { display: inline-block; margin-top: 12px; line-height: 0; }
+.visitor-total img { height: 28px; width: auto; }
 .visitor-note { margin: 14px 0 0; color: var(--secondary); font-size: 13px; }
 
 
@@ -185,7 +187,7 @@ body:not(.dark) #sun { display: none; }
   .pub-group { padding: 18px; }
   .pub-group-header { align-items: start; }
   .visitor-globe { padding: 18px; }
-  .visitor-globe-embed { min-height: 300px; }
+  .visitor-globe-embed { width: 220px; min-height: 220px; }
   .cv-row { grid-template-columns: 1fr; gap: 2px; }
   .cv-date { order: -1; }
   .footer span { display: block; }
