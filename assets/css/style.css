@@ -93,21 +93,6 @@ body:not(.dark) #sun { display: none; }
 .social-icons a:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-1px); }
 .social-icons svg { width: 19px; height: 19px; }
 
-.section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin: 38px 0 16px; }
-.section-heading h2 { margin: 0; font-size: 22px; letter-spacing: -0.018em; }
-.section-heading a { color: var(--secondary); font-size: 14px; }
-.section-heading a:hover { color: var(--accent); }
-
-.post-entry {
-  position: relative; margin-bottom: 22px; padding: 28px;
-  background: var(--entry); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow);
-  transition: transform .16s ease, border-color .16s ease;
-}
-.post-entry:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--accent) 45%, var(--border)); }
-.post-entry .entry-content { margin: 10px 0 0; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
-.post-entry .entry-link { position: absolute; inset: 0; z-index: 1; border-radius: inherit; }
-.post-entry .entry-footer { position: relative; z-index: 2; }
-
 .page-header { margin: 28px 0 30px; }
 .page-header h1 { margin: 0 0 8px; font-size: 40px; line-height: 1.2; letter-spacing: -0.035em; }
 .page-header p { color: var(--secondary); margin: 0; max-width: 680px; }
@@ -196,7 +181,6 @@ body:not(.dark) #sun { display: none; }
   .main { padding-left: 18px; padding-right: 18px; }
   .nav { padding-left: 18px; padding-right: 18px; }
   .first-entry { min-height: 210px; }
-  .post-entry { padding: 22px; }
   .publication { grid-template-columns: 1fr; gap: 14px; }
   .pub-teaser { max-width: 100%; }
   .pub-group { padding: 18px; }

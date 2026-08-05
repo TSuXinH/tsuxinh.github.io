@@ -4,7 +4,7 @@ A lightweight academic website inspired by the information architecture of [Lil'
 
 ## What is included
 
-- responsive homepage with research-note cards;
+- responsive homepage with an academic introduction and professional links;
 - Publications and About pages;
 - light/dark mode with saved user preference;
 - RSS, sitemap, robots.txt, custom 404 page, and basic SEO metadata;
