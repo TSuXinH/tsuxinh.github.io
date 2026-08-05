@@ -38,4 +38,30 @@
     document.body.appendChild(hitCounter);
   }
 
+  const visitorMap = document.querySelector('.visitor-map-embed');
+  if (visitorMap) {
+    const disableBrokenStatsLink = () => {
+      const mapLink = visitorMap.querySelector('#mapmyvisitors-widget');
+      if (mapLink) {
+        mapLink.removeAttribute('href');
+        mapLink.removeAttribute('target');
+      }
+    };
+
+    const mapObserver = new MutationObserver(disableBrokenStatsLink);
+    mapObserver.observe(visitorMap, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      attributeFilter: ['href']
+    });
+    disableBrokenStatsLink();
+
+    visitorMap.addEventListener('click', (event) => {
+      if (event.target.closest('#mapmyvisitors-widget')) {
+        event.preventDefault();
+      }
+    });
+  }
+
 })();
