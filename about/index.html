@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#a86f00">
   <title>About — Xinhong Xu</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/css/style.css?v=9">
+  <link rel="stylesheet" href="/assets/css/style.css?v=10">
   <meta property="og:title" content="About — Xinhong Xu">
   <meta property="og:description" content="Visitor map and visit count for the personal website of Xinhong Xu.">
   <meta property="og:type" content="website">
@@ -30,34 +30,19 @@
   </nav>
 </header>
 
-<main class="main wide">
-  <header class="page-header"><h1>About</h1><p>Visitor activity for this website.</p></header>
-  <section class="visitor-dashboard" aria-label="Visitor statistics">
-    <div class="visitor-map-panel">
-      <div class="visitor-panel-header"><div><span class="kicker">Global reach</span><h2>Visitor Map</h2></div></div>
-      <div class="visitor-map" aria-label="Approximate locations of visitors">
-        <script id="_wauvst">var _wau = window._wau || []; _wau.push(["map", "yt9mf2f1jh", "vst", "600", "300", "night", "star-orange"]);</script>
-        <script async src="https://waust.at/m.js"></script>
-      </div>
+<main class="main">
+  <header class="page-header"><h1>About</h1></header>
+  <section class="visitor-globe" aria-labelledby="visitor-globe-title">
+    <header class="visitor-globe-header"><span class="kicker">Global visitors</span><h2 id="visitor-globe-title">Around the World</h2></header>
+    <div class="visitor-globe-embed" aria-label="Interactive globe showing approximate visitor locations and visitor count">
+      <script type="text/javascript" id="mmvst_globe" src="https://mapmyvisitors.com/globe.js?d=BKic1soooeIlZV1AOqgPQKJPOLwnhVn0hU6f05q2xiY"></script>
     </div>
-    <aside class="visitor-count-panel">
-      <span class="kicker">Total visits</span>
-      <strong id="visitor-count" class="visitor-count" aria-live="polite">—</strong>
-      <span class="visitor-count-label">page views</span>
-    </aside>
+    <p class="visitor-note">Approximate visitor locations and counts are provided by MapMyVisitors.</p>
   </section>
-  <p class="visitor-note">Statistics begin with the launch of this page. Locations are approximate. Map and count data are provided by whos.amung.us and CounterAPI.</p>
 </main>
 
 <footer class="footer"><span>&copy; 2026 Xinhong Xu</span><span>Built as a lightweight GitHub Pages site</span></footer>
 <a href="#top" class="top-link" id="top-link" aria-label="Go to top"><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg></a>
-<script>
-  function renderVisitorCount(response) {
-    const count = document.getElementById('visitor-count');
-    if (count && Number.isFinite(Number(response.value))) count.textContent = Number(response.value).toLocaleString();
-  }
-</script>
-<script async src="https://counterapi.com/api/tsuxinh.github.io/view/about-visits?callback=renderVisitorCount"></script>
 <script src="/assets/js/site.js"></script>
 
 </body>
