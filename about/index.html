@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#a86f00">
   <title>About — Xinhong Xu</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/css/style.css?v=12">
+  <link rel="stylesheet" href="/assets/css/style.css?v=13">
   <meta property="og:title" content="About — Xinhong Xu">
   <meta property="og:description" content="Visitor map and visit count for the personal website of Xinhong Xu.">
   <meta property="og:type" content="website">
@@ -32,13 +32,15 @@
 
 <main class="main">
   <header class="page-header"><h1>About</h1></header>
-  <section class="visitor-globe" aria-labelledby="visitor-globe-title">
-    <header class="visitor-globe-header"><span class="kicker">Global visitors</span><h2 id="visitor-globe-title">Around the World</h2></header>
-    <div class="visitor-globe-embed" aria-label="Interactive globe showing approximate visitor locations and visitor count">
-      <script type="text/javascript" id="mmvst_globe" src="https://mapmyvisitors.com/globe.js?d=BKic1soooeIlZV1AOqgPQKJPOLwnhVn0hU6f05q2xiY"></script>
+  <section class="visitor-map" aria-labelledby="visitor-map-title">
+    <header class="visitor-map-header"><span class="kicker">Global visitors</span><h2 id="visitor-map-title">Around the World</h2></header>
+    <div class="visitor-map-embed" aria-label="Two-dimensional map showing approximate visitor locations">
+      <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d=WYnzcCQk4QLRz31CnaHYjySrlPmy5jYW8aUxZnCGw5M&amp;cl=ffffff&amp;w=a" onerror="this.parentElement.classList.add('is-unavailable')"></script>
+      <p class="visitor-map-fallback" role="status">Visitor map is temporarily unavailable.</p>
     </div>
     <a class="visitor-total" href="https://hits.sh/tsuxinh.github.io/" target="_blank" rel="noopener" data-hit-counter aria-label="View cumulative visit statistics">
-      <img src="https://hits.sh/tsuxinh.github.io.svg?style=flat-square&amp;label=Total%20Visits&amp;color=a86f00&amp;labelColor=403848" alt="Cumulative visit count">
+      <span class="visitor-total-label">Total Visits</span>
+      <span class="visitor-total-count"><img src="https://hits.sh/tsuxinh.github.io.svg?style=flat-square&amp;label=Total%20Visits&amp;color=a86f00&amp;labelColor=403848" alt="Cumulative visit count"></span>
     </a>
     <p class="visitor-note">Approximate locations are provided by MapMyVisitors. The cumulative visit count is provided by hits.sh.</p>
   </section>
