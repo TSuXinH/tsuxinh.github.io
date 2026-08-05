@@ -11,7 +11,6 @@
 
 ## Before sharing publicly
 
-- [ ] Replace profile artwork or confirm it is acceptable.
 - [ ] Verify all publication and code links.
 - [ ] Update CAPT status.
 - [ ] Review public contact information.

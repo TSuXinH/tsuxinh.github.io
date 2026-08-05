@@ -5,7 +5,7 @@ A lightweight academic website inspired by the information architecture of [Lil'
 ## What is included
 
 - responsive homepage with an academic introduction and professional links;
-- Publications and About pages;
+- a dedicated Publications page;
 - light/dark mode with saved user preference;
 - RSS, sitemap, robots.txt, custom 404 page, and basic SEO metadata;
 - original SVG artwork for the site identity and research figures;
@@ -62,26 +62,19 @@ Do not open `index.html` directly with `file://`, because the site uses root-rel
 
 ## Replace before public launch
 
-1. **Portrait / identity artwork**  
-   Replace `assets/img/profile-art.svg` with a photograph or preferred artwork. Keep the same filename, or update the path in `about/index.html`.
-
-2. **Publication links**
+1. **Publication links**
    Check the CalM repository link in `publications/index.html`. It currently assumes `https://github.com/TSuXinH/CalM`.
 
-3. **CAPT status**
+2. **CAPT status**
    The site currently uses the public status “arXiv preprint.” Update the venue only after you decide that it should be public.
 
-4. **CV**
+3. **CV**
    Replace `assets/files/CV.pdf` with the latest version of your CV.
-
-5. **Personal text**
-   The site avoids inventing hobbies. Add genuine interests to the About page when ready.
 
 ## Editing notes
 
 - Homepage: `index.html`
 - Publications: `publications/index.html`
-- About: `about/index.html`
 - CV: `assets/files/CV.pdf`
 - Theme and layout: `assets/css/style.css`
 
