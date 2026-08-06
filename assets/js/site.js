@@ -6,11 +6,11 @@
   }
 
   const toggle = document.getElementById('theme-toggle');
-  const themeIcon = document.getElementById('theme-icon');
-  const updateThemeIcon = () => {
+  const favicon = document.getElementById('theme-favicon');
+  const updateThemeAssets = () => {
     const dark = body.classList.contains('dark');
-    if (themeIcon) {
-      themeIcon.src = dark ? '/assets/img/night.png' : '/assets/img/day.png';
+    if (favicon) {
+      favicon.href = dark ? '/assets/img/night.png' : '/assets/img/day.png';
     }
     if (toggle) {
       const label = dark ? 'Switch to light mode' : 'Switch to dark mode';
@@ -19,12 +19,12 @@
     }
   };
 
-  updateThemeIcon();
+  updateThemeAssets();
   if (toggle) {
     toggle.addEventListener('click', () => {
       body.classList.toggle('dark');
       localStorage.setItem('pref-theme', body.classList.contains('dark') ? 'dark' : 'light');
-      updateThemeIcon();
+      updateThemeAssets();
     });
   }
 
