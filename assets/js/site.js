@@ -6,10 +6,25 @@
   }
 
   const toggle = document.getElementById('theme-toggle');
+  const themeIcon = document.getElementById('theme-icon');
+  const updateThemeIcon = () => {
+    const dark = body.classList.contains('dark');
+    if (themeIcon) {
+      themeIcon.src = dark ? '/assets/img/night.png' : '/assets/img/day.png';
+    }
+    if (toggle) {
+      const label = dark ? 'Switch to light mode' : 'Switch to dark mode';
+      toggle.setAttribute('aria-label', label);
+      toggle.title = label;
+    }
+  };
+
+  updateThemeIcon();
   if (toggle) {
     toggle.addEventListener('click', () => {
       body.classList.toggle('dark');
       localStorage.setItem('pref-theme', body.classList.contains('dark') ? 'dark' : 'light');
+      updateThemeIcon();
     });
   }
 
